@@ -1,0 +1,20 @@
+{
+  "name": "report-chain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "fabric-contract-api": "^2.0.0",
+		"fabric-shim": "^2.0.0",
+    "json-stringify-deterministic": "^1.0.1",
+    "sort-keys-recursive": "^2.1.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Subash Shakya",
+  "license": "ISC"
+}

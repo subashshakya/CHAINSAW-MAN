@@ -6,3 +6,4 @@ metadata.json
 chaincode.tgz
 resources/*
 !resources/.gitkeep
+*.pem

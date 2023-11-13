@@ -1,0 +1,19 @@
+{
+  "name": "chainsaw-man-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@grpc/grpc-js": "^1.9.7",
+    "@hyperledger/fabric-gateway": "1.4.0",
+    "express": "^4.18.2"
+  },
+  "author": "Subash Shakya",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}

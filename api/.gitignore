@@ -1,0 +1,5 @@
+cacert.pem
+privatekey.pem
+signcert.pem
+.env
+node_modules

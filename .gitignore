@@ -7,3 +7,5 @@ chaincode.tgz
 resources/*
 !resources/.gitkeep
 *.pem
+*.env
+fabric-samples/*

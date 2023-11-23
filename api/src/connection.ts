@@ -70,3 +70,7 @@ async function newSigner() {
      const privateKey = createPrivateKey(privateKeyBytes);
      return gateway.signers.newPrivateKeySigner(privateKey);
 }
+
+async function submitTransaction() {
+     
+}

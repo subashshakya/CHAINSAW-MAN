@@ -1,30 +1,16 @@
 const express = require('express');
 const {MongoClient, ServerApiVersion} = require('mongodb');
+const mongoose = require('mongoose');
 let cors = require('cors')
 require('dotenv').config();
 const app = express();
+const pool = require('../db');
+const port = 3000;
+const URI = "mongodb://localhost:27017/Reports";
 
-const URI = "mongodb+srv://saladhunter:M@n1them00n@cluster0.cnpwvt9.mongodb.net/?retryWrites=true&w=majority"
 
-const client = new MongoClient(URI, {
-     serverApi: {
-          version: ServerApiVersion.v1,
-          strict: true,
-          deprecationErrors:true
-     }
+app.get('/', (req:any, res:any) => {
+     res.sendStatus(200);
 })
 
-async function run() {
-     try {
-          await client.connect();
-
-          await client.db("admin").command({ping: 1});
-          console.log("Successfully connected to mongoDB");
-     } catch (error) {
-          console.log(error);
-     } finally {
-          await client.close();
-     }
-}
-
-run();
+app.listen(port, () => console.log(`server has started on port: ${port}`));

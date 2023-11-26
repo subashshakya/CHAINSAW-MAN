@@ -4,7 +4,7 @@ import reportModel from "../model/report-model";
 import { Contract } from '@hyperledger/fabric-gateway';
 import { Connection } from "../connection";
 import { Request, Response } from 'express';
-
+const pool = require('../../db');
 let date = new Date();
 
 export const createReport = async(req: Request, res: Response) => {
@@ -31,11 +31,11 @@ const checkNullField = (reportDetail: string[]): boolean | void => {
 }
 
 export const readAllReport = async (req: Request, res: Response) => {
-  
+
 }
 
 export const readByReportId = async (req: Request, res: Response) => {
-  
+
 }
 
 export const updateReportById = async (req:Request, res: Response) => {
@@ -45,3 +45,4 @@ export const updateReportById = async (req:Request, res: Response) => {
 export const deleteReportById = async (req: Request, res: Response) => {
 
 }
+
